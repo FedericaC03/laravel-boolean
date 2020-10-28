@@ -24,14 +24,14 @@
          <th>Surname</th>
          <th>Birth date</th>
         </tr>
-        <?php foreach($projects as $user) { ?>
+        @foreach ($projects as $student)
         <tr>
-        <th> <?php echo $user->name ?> </th>
-        <th> <?php echo $user->surname ?> </th>
-        <th> <?php echo $user->birth_date ?> </th>
-        
-        <?php } ?>
-        
+          <td>{{$student->id}}</td>
+          <td>{{$student->name}}</td>
+          <td>{{$student->surname}}</td>
+          <td>{{$student->birth_date}}</td>
+        </tr>
+      @endforeach
         </tr>
         
         
